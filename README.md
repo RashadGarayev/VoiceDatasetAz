@@ -14,4 +14,4 @@
 
 
  - By calling the datacreate.py file in the helper directory, you can prepare the train, test, and dev.csv files. Note that you should make changes to the folder names in the file. Also, when translating text within the code, it cleans the text before recording it into the CSV files. Define the values in the code as follows
- - <code style="color : green"> python datacreate.py</code></p>
+   <code> $${\color{red} python datacreate.py }$$ </code>
