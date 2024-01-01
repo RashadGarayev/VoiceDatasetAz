@@ -9,3 +9,4 @@
 -  ####  <code><span style="color:green">pip install pydub</span></code>
 -  #### <code><span style="color:green">pip install faster_whisper</span></code>
 <p> Splitting the audio files into segments and placing them into folders using the ffmpeg library because of the large size of the audio files, I've prepared a dataset using the faster_whisper library.</p>
+<p>"You can use Python scripts in the helper folder to assist in preparing the dataset."</p>
