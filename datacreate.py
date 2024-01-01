@@ -1,10 +1,9 @@
 from faster_whisper import WhisperModel
 from pydub import AudioSegment
 import os,sys,re,csv
-from helper import remove_punc_digits,replace_digits_with_words
+from helper.digitpunc import remove_punc_digits,replace_digits_with_words
 
 model_size = "large-v2"
-
 output_dir = "clips"
 csv_file = r'train'
 header = ['path', 'filesize', 'transcript']
@@ -25,11 +24,7 @@ for audio_file in audio_files:
     result = model.transcribe(audio_file_path)
     segments, info = model.transcribe(audio_file_path)
     audio = AudioSegment.from_mp3(audio_file_path)
-
-    
-
     for segment in segments:
-
         # Calculate the segment duration in milliseconds
          # Replace with the actual transcribed text
         segment_audio = audio[segment.start*1000: segment.end*1000]
@@ -64,7 +59,4 @@ for audio_file in audio_files:
             writer = csv.writer(csvfile)
             writer.writerow(header)  # Write the header
             writer.writerows(data)  # Write the data rows
-
-
-
     print(f'CSV file "{csv_file}" has been created.')
