@@ -16,3 +16,5 @@
  - By calling the datacreate.py file in the helper directory, you can prepare the train, test, and dev.csv files. Note that you should make changes to the folder names in the file. Also, when translating text within the code, it cleans the text before recording it into the CSV files. Define the values in the code as follows
    
 <h4 style="color: red"><code>  python datacreate.py  </code></h4>
+
+<p>"First, by placing a specific portion of audio files into the audio folder, I ensure their availability for the creation of the train.csv. Note that train and dev.csv files should differ in volume; the train.csv file should be significantly larger than dev.csv. Assuming that you have prepared the train.csv file and are moving on to the next, dev.csv, replace the audio files obtained for dev.csv in the audio folder (not in addition to but replacing, ensuring that train, dev, and test files have distinct text and audio). Also, within the datacreate.py file, increment the value of i, representing the number of clips in the clips folder, by one unit. i=22400"</p>
