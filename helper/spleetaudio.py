@@ -23,7 +23,7 @@ def get_audio_duration(audio_file):
 if __name__ == "__main__":
     input_files = [r"/home/user/Downloads/mp/1.mp4", r"/home/user/Downloads/mp/2.mp4",r"/home/user/Downloads/mp/3.mp4"]
     output_folder = r"/home/user/Downloads/output"
-    num_parts = 3
+    num_parts = 4
 
     for input_file in input_files:
         export_and_split_audio(input_file, output_folder, num_parts)
